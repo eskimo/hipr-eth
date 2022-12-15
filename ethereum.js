@@ -38,7 +38,7 @@ class Ethereum {
     this.keccak256 = ethers.utils.keccak256;
     this.namehash = ethers.utils.namehash;
 
-    this.provider = new ethers.getDefaultProvider('http://172.28.20.203:8545', options);
+    this.provider = new ethers.getDefaultProvider('http://localhost:8545', options);
 
     this.ensRegistry = new ethers.Contract(ENS_ADDRESS, ENS_ABI, this.provider);
     this.ensResolver = null;
